@@ -10,7 +10,7 @@ def selection(li):
 
 #_main_
 while(True):
-    li = list(map(int, input("\nEnter the array items = ").strip().split()))
+    li = list(map(float, input("\nEnter the array items = ").strip().split()))
     selection(li)
     print("Selection sorted array(ascending order) = ", li)
     
