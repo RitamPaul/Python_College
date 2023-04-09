@@ -1,22 +1,20 @@
-def arm(num):
-    duplicate = num
-    sum=0
-    while(num>0):
-        last = num%10
-        sum += (last**3)
-        num = num//10
-    return sum==duplicate
+def arm():
+    for num in range(1, 1001):
+        duplicate = num
+        sum=0
+        while(num>0):
+            last = num%10
+            sum += (last**3)
+            num = num//10
+        if(sum==duplicate):
+            print(sum, end=" ")
 
 #_main_
 while(True):
-    num = int(input("\nEnter your integer number = "))
-    ans = arm(num)
-    if(ans):
-        print("Yes, your number is armstrong number")
-    else:
-        print("Your number is not armstrong number")
+    print("\nThe Armstrong numbers from 1 to 10000 are :- \n")
+    arm()
     
-    choice = int(input("Want to continue? (1/0) = "))
+    choice = int(input("\nWant to continue? (1/0) = "))
     if(choice==0):
         print("---> Come again later <---")
         break
