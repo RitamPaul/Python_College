@@ -9,6 +9,7 @@ while(True):
             if(li[i] == li[j]):
                 dupli = True
                 li.pop(j)
+                continue
             j+=1
         if(dupli == False):
             i+=1
